@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_extra-addons/odoo.addons/library_extra-addons/odoo.addons/library,extra-addons/odoo.addons/library.extra-addons/odoo.addons/library,model_extra-addons/odoo.addons/library_extra-addons/odoo.addons/library,,1,0,0,0
+access_library_book_all,access.library.book.all,model_library_book,,1,0,0,0
+access_library_book_user,access.library.book.users,model_library_book,base.group_user,1,1,1,0
+access_library_category_all,access.library.category.all,model_library_category,,1,1,1,0

@@ -8,3 +8,8 @@ class LibraryBook(models.Model):
 
     name = fields.Char(string="Book")
     description = fields.Text(string="Description")
+
+    category_ids = fields.One2many(
+        comodel_name="library.category",
+        inverse_name="book_id",
+        string="Categorias")
