@@ -9,7 +9,7 @@ class LibraryCategory(models.Model):
     name = fields.Char(string="Category")
     description = fields.Text(string="Description")
 
-    book_id = fields.Many2many(
+    book_id = fields.Many2one(
         comodel_name="library.book",
         string="Libro"
     )
