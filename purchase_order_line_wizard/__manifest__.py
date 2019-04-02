@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Library Book",
+    'name': "Purchase Order Wizard",
 
     'summary': """
-        Library Book""",
+        Purchase Order Wizard""",
 
 
     'author': "Carlos",
@@ -16,17 +16,11 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['purchase'],
 
     # always loaded
     'data': [
-         'security/groups.xml',
-         'data/data.xml',
-         'security/ir.model.access.csv',
-        # 'views/views.xml',
-        # 'views/templates.xml',
-        'views/library_book_view.xml',
-        'views/library_category_view.xml'
+         'views/purchase_order_line_wizard.xml',
     ],
     # only loaded in demonstration mode
     'installable':True,
